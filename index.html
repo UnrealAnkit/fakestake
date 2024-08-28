@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineRush Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <h2>MineRush</h2>
+            
+            <!-- Wallet Display -->
+            <div id="wallet-display">Wallet Balance: $<span id="wallet-balance">1000</span></div>
+            
+            <!-- Timer Display -->
+            <div id="timer-display">Timer: <span id="timer">30</span> seconds</div>
+
+            <!-- Add Money to Wallet -->
+            <div class="input-section">
+                <label for="add-money">Add Money</label>
+                <input type="number" id="add-money" placeholder="Enter amount to add">
+                <button id="add-money-btn">Add Money</button>
+            </div>
+
+            <!-- Bet Section -->
+            <div class="input-section">
+                <label for="bet-amount">Bet Amount</label>
+                <input type="number" id="bet-amount" placeholder="Enter amount">
+            </div>
+            <div class="input-section">
+                <label for="mines">Mines</label>
+                <select id="mines">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="input-section">
+                <label for="profit">Profit</label>
+                <input type="text" id="profit" value="0x" disabled>
+            </div>
+
+            <!-- Action Buttons -->
+            <button id="bet-btn">Bet</button>
+            <button id="reshuffle-btn">Re-Shuffle Board</button>
+            <button id="cashin-btn">Cash In Winnings</button>
+            <button id="cashout-btn">Cash Out Balance</button>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="grid">
+                <!-- Dynamically created grid cells will go here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
